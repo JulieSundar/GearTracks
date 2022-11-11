@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Gear Tracker</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+	
+	<!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="dist/css/metro-bootstrap.min.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    
+	
+	<style>
+
+
+
+  .grid .row {
+    background-color: transparent;
+    border: 0;
+    height: 50px;
+    padding-right: 0;
+    
+  }
+  .grid .row .col-md-3
+    {
+        min-height: 150px;
+    }
+  .grid .row .col-md-6
+    {
+        min-height: 300px;
+    }
+
+	</style>
+	<!--STYLE 2-->
+	<style>
+	</style>
+</head>
+	
+<body>
+	
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/lion.png" height="50w" width="50" alt="">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Profile</a>
+                    </li>
+                    <li>
+                        <a href="form.html">Log out</a>
+                    </li>
+                   
+                </ul>
+				<!--SECOND MENU-->
+		
+                <ul class="nav navbar-nav navbar-right">
+                   
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="glyphicon glyphicon-cog"></span></a>
+                        <ul class="dropdown-menu">
+                           
+                            <li><a href="tables.html"><i class="icon-th icon-white"></i> Feeds</a></li>
+                            <li><a href="tables.html"><i class="icon-th icon-white"></i> Map</a></li>
+                            <li><a href="tables.html"><i class="icon-th icon-white"></i> Connectivity</a></li>
+							<li><a href="records.html"><i class="icon-th icon-white"></i> Records</a></li>
+                        </ul>
+					</li>
+                        <!--END-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+			
+                <!--End nav-bar left-->
+           
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+    <div class="grid">
+     <div class="row col-md-12">
+          <div class="tile tile-purple col-md-3 col-xs-12"  >
+		  <div class="tile-content ">
+            <a href="map.html" >
+              <div id="MapCarousel" class="carousel slide">
+				  <div class="carousel-inner">  
+					<div class="item active">
+						<img src="images/map.png"/>
+					</div>
+					<div class="item">
+						<img src="images/map.png"/>
+					</div>
+				  </div>
+				
+				</div>
+            </a>
+		  </div>
+          </div>
+          <div class="tile tile-emerald col-md-3 col-xs-12"  >
+		  <div class="tile-content ">
+			 <a href="dashboard.html" >
+				<div id="DashboardCarousel" class="carousel slide">
+				  <!-- Menu -->
+				  <!-- Items -->
+				  <div class="carousel-inner">  
+					  <!-- Item 1 -->
+					<div class="item active">
+						<img src="images/dashboard.jpg"/>
+					</div>
+					  <!-- Item 2 -->
+					<div class="item">
+						<img src="images/dashboard.jpg"/>
+					</div>
+					  <!-- Item 3 -->
+					
+				  </div>
+				  
+				<!-- Post Info -->
+				</div>
+			 </a>
+		  </div>
+          </div>
+          
+      </div>
+      <div class="row col-md-12">
+      </div>
+      <div class="row col-md-12">
+      </div>
+      <div class="row col-md-12">
+          <div class="tile col-md-3 col-xs-12"  >
+            <div class="tile-content">
+			
+			 <a href="notification.html" >
+				<div id="NotificationCarousel" class="carousel slide">
+				  <!-- Menu -->
+				  <!-- Items -->
+				  <div class="carousel-inner">  
+					  <!-- Item 1 -->
+					<div class="item active">
+						<img src="images/news.png"/>
+					</div>
+					  <!-- Item 2 -->
+					<div class="item">
+						<img src="images/newsticker.jpg"/>
+					</div>
+					  <!-- Item 3 -->
+					
+				  </div>
+				  
+				<!-- Post Info -->
+				</div>
+			 </a>
+            </div>
+            
+          </div>
+		  
+          <div class="tile tile-red col-md-3 col-xs-12"  >
+		  <div class="tile-content ">
+		   <a href="records.html" >
+		   <div id="RecordCarousel" class="carousel slide">
+				  <!-- Menu -->
+				  <!-- Items -->
+				  <div class="carousel-inner">  
+					  <!-- Item 1 -->
+					<div class="item active">
+						<img src="images/reports.jpg"/>
+					</div>
+					  <!-- Item 2 -->
+					<div class="item">
+						<img src="images/report2.jpg"/>
+					</div>
+					  <!-- Item 3 -->
+					
+				  </div>
+				  
+				<!-- Post Info -->
+				</div>
+		   </a>
+		  </div>
+          </div>
+          
+      </div>
+	  
+	  <div class="row col-md-12">
+      </div>
+      <div class="row col-md-12">
+      </div>
+      <div class="row col-md-12">
+          <div class="tile  tile-orange col-md-3 col-xs-12"   >
+            <div class="tile-content ">
+			<div id="TagCarousel" class="carousel slide">
+				  <!-- Menu -->
+				  <!-- Items -->
+				   <div class="carousel-inner">  
+					  <!-- Item 1 -->
+					<div class="item active">
+						
+					</div>
+					  <!-- Item 2 -->
+					<div class="item">
+						<img src="images/locator.png"/>
+					</div>
+					  <!-- Item 3 -->
+					
+				  </div>
+				  
+				<!-- Post Info -->
+			</div>
+              
+            </div>
+            
+          </div>
+          <div class="tile tile-teal col-md-3 col-xs-12"  >
+		  <div class="tile-content ">
+		  <a href="settings.html" >
+		   <div class="tile-content ">
+			<div id="ConfigCarousel" class="carousel slide">
+				  <!-- Menu -->
+				  <!-- Items -->
+				   <div class="carousel-inner">  
+					  <!-- Item 1 -->
+					<div class="item active">
+						
+					</div>
+					  <!-- Item 2 -->
+					<div class="item">
+						<img src="images/locator.png"/>
+					</div>
+					  <!-- Item 3 -->
+					
+				  </div>
+				  
+				<!-- Post Info -->
+			</div>
+              
+            </div>
+		  </a>
+		  </div>
+			
+          </div>
+          
+      </div>
+	 
+      
+    </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+	
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="scripts/metro-docs.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	
+	<script>
+		$(function () {
+		$('#MapCarousel').carousel({
+			interval:3000,
+			pause: "false"
+		});
+		
+		
+	});
+	
+	$(function () {
+		$('#DashboardCarousel').carousel({
+			interval:4000,
+			pause: "false"
+		});
+		
+		
+	});
+	
+	$(function () {
+		$('#NotificationCarousel').carousel({
+			interval:2000,
+			pause: "false"
+			
+		});
+		
+		
+	});
+	
+	$(function () {
+		$('#RecordCarousel').carousel({
+			interval:5000,
+			pause: "false"
+		});
+		
+		
+	});
+	$(function () {
+		$('#TagCarousel').carousel({
+			interval:1000,
+			pause: "false"
+		});
+		
+		
+	});
+	
+	$(function () {
+		$('#ConfigCarousel').carousel({
+			interval:1000,
+			pause: "false"
+		});
+		
+		
+	});
+	</script>
+	
+</body>
+
+</html>

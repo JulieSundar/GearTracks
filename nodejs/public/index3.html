@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>metro-bootstrap: Twitter Bootstrap with Metro style</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="dist/css/metro-bootstrap.min.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+	<!--Custom Styles-->
+	<link href="css/logo-nav.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+
+
+
+  .grid .row {
+    background-color: transparent;
+    border: 0;
+    height: 50px;
+    padding-right: 0;
+    
+  }
+  .grid .row .col-md-3
+    {
+        min-height: 150px;
+    }
+  .grid .row .col-md-6
+    {
+        min-height: 300px;
+    }
+
+	</style>
+  </head>  
+  <body >
+   <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/lion.png" height="50w" width="50" alt="">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Profile</a>
+                    </li>
+                    <li>
+                        <a href="form.html">Log out</a>
+                    </li>
+                   
+                </ul>
+				<!--SECOND MENU-->
+		
+                <ul class="nav navbar-nav navbar-right">
+                   
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="glyphicon glyphicon-cog"></span></a>
+                        <ul class="dropdown-menu">
+                           
+                            <li><a href="tables.html"><i class="icon-th icon-white"></i> Feeds</a></li>
+                            <li><a href="tables.html"><i class="icon-th icon-white"></i> Map</a></li>
+                            <li><a href="tables.html"><i class="icon-th icon-white"></i> Connectivity</a></li>
+							<li><a href="records.html"><i class="icon-th icon-white"></i> Records</a></li>
+                        </ul>
+					</li>
+                        <!--END-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+			
+                <!--End nav-bar left-->
+           
+        </div>
+        <!-- /.container -->
+    </nav>
+  
+  
+  
+  
+  
+  
+<div class="grid">
+<!--MAP DIV-->
+<div class="col-sm-6 col-md-6">
+	<div class="thumbnail tile tile-wide tile-midnight blue">
+		<a href="map.html" >
+		
+			 <div id="MapCarousel" class="carousel slide">
+				  <!-- Menu -->
+				  <!-- Items -->
+				  <div class="carousel-inner">  
+					  <!-- Item 1 -->
+					<div class="item active">
+						<img src="images/map.png"/>
+					</div>
+					  
+					 
+				  </div>
+				 
+				<!-- Post Info -->
+				</div>
+				<div class="menulogo" >
+					<img src="images/151.gif" height="40px" width="40px"/>
+					
+				</div>
+				<div class="menulogo2" >
+					<img src="images/714.gif" height="20px" width="20px"/>
+					
+				</div>
+				<div class="menulogo3" >
+					<img src="images/714.gif" height="20px" width="20px"/>
+					
+				</div>
+		</a>
+	</div>
+</div>
+<!--Dashboard Div-->
+<div class="col-sm-6 col-md-6">
+	<div class="thumbnail tile tile-wide tile-purple">
+		<a href="dashboard.html" >
+			
+			<!--slider here-->
+			<div id="DashboardCarousel" class="carousel slide">
+				  <!-- Menu -->
+				  <!-- Items -->
+				  <div class="carousel-inner">  
+					  <!-- Item 1 -->
+					<div class="item active">
+						<img src="images/dashboard.jpg"/>
+					</div>
+					  <!-- Item 2 -->
+					<div class="item">
+						<img src="images/dashboard.jpg"/>
+					</div>
+					  <!-- Item 3 -->
+					
+				  </div>
+				 
+				
+			</div>
+			<div class="menulogo" >
+					<img src="images/chart.png" height="40px" width="40px"/>
+					<h1>MAP</h1>
+			</div>
+			
+		</a>
+	</div>
+</div>
+<!--Message Div-->
+<div class="col-sm-6 col-md-6">
+	<div class="thumbnail tile tile-wide tile-green sea">
+		<a href="notification.html" >
+			<!--Slider here-->
+			<div id="NotificationCarousel" class="carousel slide">
+				  <!-- Menu -->
+				  <!-- Items -->
+				  <div class="carousel-inner">  
+					  <!-- Item 1 -->
+					<div class="item active">
+						<img src="images/news.png"/>
+					</div>
+					  <!-- Item 2 -->
+					<div class="item">
+						<img src="images/newsticker.jpg"/>
+					</div>
+					  <!-- Item 3 -->
+					
+				  </div>
+				  
+				<!-- Post Info -->
+				</div>
+				<div class="menulogo" >
+					<img src="images/chart.png" height="40px" width="40px"/>
+					<h1>MAP</h1>
+				</div>
+		</a>
+	</div>
+</div>
+<!--Report Div-->
+<div class="col-sm-6 col-md-6">
+	<div class="thumbnail tile tile-wide tile-red">
+		<a href="report.html" >
+			<!--Slider here-->
+			<div id="RecordCarousel" class="carousel slide">
+				  <!-- Menu -->
+				  <!-- Items -->
+				  <div class="carousel-inner">  
+					  <!-- Item 1 -->
+					<div class="item active">
+						<img src="images/reports.jpg"/>
+					</div>
+					  <!-- Item 2 -->
+					<div class="item">
+						<img src="images/report2.jpg"/>
+					</div>
+					  <!-- Item 3 -->
+					
+				  </div>
+				  
+				<!-- Post Info -->
+				</div>
+				<div class="menulogo" >
+					<img src="images/chart.png" height="40px" width="40px"/>
+					<h1>MAP</h1>
+				</div>
+		</a>
+	</div>
+</div>
+
+<!--Tag Div-->
+<div class="col-sm-6 col-md-6">
+	<div class="thumbnail tile tile-wide tile-orange">
+		<a href="tag.html" >
+			<!--Slider here-->
+			<div id="TagCarousel" class="carousel slide">
+				  <!-- Menu -->
+				  <!-- Items -->
+				   <div class="carousel-inner">  
+					  <!-- Item 1 -->
+					<div class="item active">
+						<img src="images/locator.png"/>
+					</div>
+					  <!-- Item 2 -->
+					<div class="item">
+						<img src="images/locator.png"/>
+					</div>
+					  <!-- Item 3 -->
+					
+				  </div>
+				  
+				<!-- Post Info -->
+			</div>
+			
+			<div class="menulogo" >
+					<img src="images/chart.png" height="40px" width="40px"/>
+					<h1>MAP</h1>
+			</div>
+		</a>
+	</div>
+</div>
+
+<!--Config Div-->
+<div class="col-sm-6 col-md-6">
+	<div class="thumbnail tile tile-wide tile-orange">
+		<a href="settings.html" >
+			<!--Slider here-->
+			<div id="ConfigCarousel" class="carousel slide">
+				  <!-- Menu -->
+				  <!-- Items -->
+				   <div class="carousel-inner">  
+					  <!-- Item 1 -->
+					<div class="item active">
+						<img src="images/locator.png"/>
+					</div>
+					  <!-- Item 2 -->
+					<div class="item">
+						<img src="images/locator.png"/>
+					</div>
+					  <!-- Item 3 -->
+					
+				  </div>
+				  
+				<!-- Post Info -->
+			</div>
+			
+			<div class="menulogo" >
+					<img src="images/chart.png" height="40px" width="40px"/>
+					<h1>MAP</h1>
+			</div>
+		</a>
+	</div>
+</div>
+
+</div><!--End of Grid-->
+    
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/metro-docs.js"></script>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36060270-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  
+  
+  $('#collapse-sidebar').click(function()
+  {
+	
+	$('.navbar-side').toggleClass('navbar-side-closed');
+	$('#wrapper').toggleClass('wrapper-full');
+	
+	
+  });
+
+</script>
+	<!--SLIDER SCRIPTS-->
+<script>
+	$(function () {
+		$('#MapCarousel').carousel({
+			interval:3000,
+			pause: "false"
+		});
+		
+		
+	});
+	
+	$(function () {
+		$('#DashboardCarousel').carousel({
+			interval:4000,
+			pause: "false"
+		});
+		
+		
+	});
+	
+	$(function () {
+		$('#NotificationCarousel').carousel({
+			interval:2000,
+			pause: "false"
+			
+		});
+		
+		
+	});
+	
+	$(function () {
+		$('#RecordCarousel').carousel({
+			interval:5000,
+			pause: "false"
+		});
+		
+		
+	});
+	$(function () {
+		$('#TagCarousel').carousel({
+			interval:1000,
+			pause: "false"
+		});
+		
+		
+	});
+	
+	$(function () {
+		$('#ConfigCarousel').carousel({
+			interval:1000,
+			pause: "false"
+		});
+		
+		
+	});
+	
+	
+</script>
+
+  </body>
+</html>

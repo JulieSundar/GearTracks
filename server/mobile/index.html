@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Cavalion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="css/metro-bootstrap.min.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--Custom styles-->
+	<link href="css/logo-nav.css" rel="stylesheet">
+	
+	<!-- Load local jQuery, removing access to $ (use jQuery, not $). -->
+  
+  <link rel="stylesheet" href="src/responsive-carousel.css" media="screen">
+  <link rel="stylesheet" href="src/responsive-carousel.flip.css" media="screen">
+  <link rel="stylesheet" href="css/demostyles.css">
+  <!-- Load local lib and tests. -->
+  
+	<style>
+
+
+
+  .grid .row {
+    background-color: transparent;
+    height: 50px;
+    padding-right: 0;
+    
+  }
+  .grid .row .col-md-3
+    {
+        min-height: 150px;
+		border-right: 2px;
+		border-style: outset;
+		border-color:#E6E3F1;
+    }
+  .grid .row .col-md-6
+    {
+        min-height: 300px;
+		border: 2px;
+		border-style: outset;
+		border-color:#E6E3F1;
+    }
+	
+	#map {
+	  margin: 20px 0;
+	  padding: 0;
+	  height: 250px;
+	  float: left;
+	  width: 100%;
+}
+	.carousel{
+	position:absolute;
+	height:100px;
+	width:100px;
+	}
+
+	</style>
+  </head>  
+  <body >
+	
+<div class="container">
+	
+  <div class="grid">
+  <!--<div class="row col-md-12"></div>-->
+     <div class="row col-md-12">
+          <div class="tile tile-clouds col-md-6 col-xs-12"  id="MapDiv">
+            <a href="http://dashboard-cavalionists.rhcloud.com/" ><span class="tile-label">Dashboard</span> </a>
+              <div id="map"  style="position: relative; overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"></div>
+          </div>
+          <div class="tile tile-red col-md-3 col-xs-6"  >
+		   <a href="views/message.html" >
+				<div class="carousel" data-transition="flip" data-autoplay data-interval="5000">
+					<div>
+					<img src="assets/large.jpg">
+					</div>
+					<div>
+					<img src="assets/monks.jpg">
+					</div>
+					<div>
+					<img src="assets/monkey.jpg">
+					</div>
+
+				</div>
+            </a>
+			
+          </div>
+          <div class="tile tile-turquoise col-md-3 col-xs-6"  >
+			 <a href="views/record.html" >
+              <h1>Records</h1>
+            </a>
+			<span class="tile-label">Records</span>
+		  </div>
+          <div class="tile tile-emerald col-md-3 col-xs-6"  >
+			 <a href="views/tag.html" >
+             <h1>Tags</h1>
+            </a>
+			<span class="tile-label">Tags</span>
+		  </div>
+		  <div class="tile tile-amethyst col-md-3 col-xs-6"  >
+			 <a href="views/config.html" >
+             <h1>Configs</h1>
+            </a>
+			<span class="tile-label">Configs</span>
+		  </div>
+      </div>
+     
+    </div>
+</div>
+    
+
+	<!--GOOGLE MAP-->
+	<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/metro-docs.js"></script>
+	<script src="src/responsive-carousel.js"></script>
+   <script src="src/responsive-carousel.touch.js"></script>
+  <script src="src/responsive-carousel.flip.js"></script>
+  <script src="src/responsive-carousel.autoplay.js"></script>
+  <script src="src/responsive-carousel.autoinit.js"></script>
+  <script src="src/globalenhance.js"></script>
+	<script src="js/jquery/jquery.js"></script>
+	
+  <script type="text/javascript">
+    var locations = [
+	['South Pacific Ocean <br> 2.8608043, -84.4340724',-13.7766805,-81.5556546, 7, "http://maps.google.com/mapfiles/ms/micons/yellow.png"],
+	['Location <br> 2.8608043, -84.4340724',2.8608043,-84.4340724, 6, "http://maps.google.com/mapfiles/ms/micons/red.png"],
+	['Location <br> 2.1720811,-38.9671542',2.1720811,-38.9671542, 5, "http://maps.google.com/mapfiles/ms/micons/yellow.png"],
+    ['Location <br> -25.4805892,-79.9183766', -25.4805892,-79.9183766, 4, "http://maps.google.com/mapfiles/ms/micons/green.png"],
+    ['Location <br>7.4399638,-57.9127612',  7.4399638,-57.9127612, 5, "http://maps.google.com/mapfiles/ms/micons/green.png"],
+    ['Location <br> -51.6794484,-64.9604912', -51.6794484,-64.9604912, 3, "714.gif"],
+    ['Location <br>  6.3144873,-56.0849108',  6.3144873,-56.0849108, 2, "http://maps.google.com/mapfiles/ms/micons/blue.png"],
+    ['Location <br> 5.3410866,-56.987163', 5.3410866,-56.987163, 1, "http://maps.google.com/mapfiles/ms/micons/blue.png"]
+];
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 3,
+    center: new google.maps.LatLng(1.031845,-64.7029118),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+	
+});
+
+
+var infowindow = new google.maps.InfoWindow();
+
+var marker, i;
+
+for (i = 0; i < locations.length; i++) {
+    marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+		animation:google.maps.Animation.BOUNCE,
+        icon: locations[i][4],
+        map: map
+    });
+
+    google.maps.event.addListener(marker, 'click', (function (marker, i) {
+        return function () {
+            infowindow.setContent(locations[i][0]);
+            infowindow.open(map, marker);
+			}
+    })(marker, i));
+}
+	
+ 
+  
+  
+  $('#collapse-sidebar').click(function()
+  {
+	
+	$('.navbar-side').toggleClass('navbar-side-closed');
+	$('#wrapper').toggleClass('wrapper-full');
+	
+	
+  });
+  
+  
+
+</script>
+
+
+  </body>
+</html>
